@@ -1,0 +1,45 @@
+---
+title: "CNN-Based Age Prediction System"
+description: |
+    Trained a CNN-based age prediction model using PyTorch, the UTK dataset, and a ResNet10 architecture to predict ages with an average error of ±4 years—optimized via hyperparameter tuning and deployed with a Streamlit UI for real-time inference.
+date: 2024-09-17
+categories: ["CNN's"]
+image: lebron.png
+format:
+  html:
+    df-print: paged
+    toc: true
+google-scholar: false
+---
+
+## Introduction
+
+This project leverages a CNN-based approach to predict age from facial images using PyTorch and the UTK dataset. Utilizing a ResNet10 architecture, the model processes over 9,000 images to achieve an average prediction error of ±4 years. Through extensive hyperparameter optimization—including learning rate scheduling and regularization—the model's accuracy improved by 28%, and a Streamlit UI was developed for real-time demographic analysis.
+
+## Output
+
+Here is a screenshot from the Streamlit UI demonstrating real-time age prediction:
+
+![Age Prediction UI Screenshot](streamlitui.png)
+
+
+## Models Used
+
+- **ResNet10 CNN Architecture** for age prediction  
+- **PyTorch** for model training and inference  
+- **Streamlit** for deploying a real-time user interface
+
+## Training
+
+- **CNN Model Training**  
+  - Includes data preprocessing, model training, and hyperparameter tuning.
+
+## Requirements
+
+- python 3.8+
+- pytorch
+- torchvision
+- pandas
+- numpy
+- streamlit
+- matplotlib or seaborn (for visualization)

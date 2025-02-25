@@ -1,0 +1,30 @@
+---
+title: "Ryan Tolone"
+about:
+    template: trestles
+    links:
+        - icon: linkedin
+          text: LinkedIn
+          url: https://www.linkedin.com/in/ryan-tolone-a5038a331/
+        - icon: github
+          text: Github
+          url: https://github.com/LtRylu
+        - text: "{{< fa envelope >}} Email"
+          url: mailto:iiryantoloneii@gmail.com
+        - text: Resume
+          url: "RyanToloneResume.pdf"
+image: img/blehh.jpg
+comments: false
+---
+
+## Bio
+
+I’m a third-year UCLA student majoring in Statistics and Data Science with a Data Science Engineering Minor, set to graduate in Spring 2026. Growing up in Mission Viejo, California, and an alumnus of Mission Viejo High School, I've always been driven by a passion for ML/AI, artificial general intelligence, deep learning, and reinforcement learning.
+
+My academic pursuits are complemented by hands-on projects and professional experiences. I recently developed a Computer Vision-Based Pickleball Analytics System and an Algorithmic Trading System for the ORB Day Trading Strategy—both of which showcase my ability to merge theoretical insights with real-world applications. I also gained industry experience as a Software Engineer Intern at Conifer Health Solutions, where I further honed my technical skills in a dynamic, fast-paced environment.
+
+Beyond my academic and professional life, I’m an avid pickleball player, snowboarder, and poker enthusiast. These hobbies mirror my approach to both work and life: pickleball teaches me strategy, teamwork, and adaptability; snowboarding reflects my adventurous spirit and ability to navigate dynamic environments; while poker sharpens my risk management and strategic decision-making skills. I also make it a point to stay updated with the latest ML/AI news, ensuring I remain at the forefront of technological advancements.
+
+I’m eager to continue applying my skills and innovative mindset to contribute to cutting-edge projects in ML/AI, making a meaningful impact in both academia and industry.
+
+

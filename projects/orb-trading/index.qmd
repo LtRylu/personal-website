@@ -1,0 +1,50 @@
+---
+title: "Algorithmic Trading System for ORB Strategy"
+description: |
+    Simulated an ORB day trading strategy on TQQQ by testing multiple interval sizes and leveraging XGBoost with an SQL-based data pipeline to predict optimal trade conditions, achieving a 19.1% annualized return improvement.
+date: 2024-11-11
+categories: ["Financial Machine Learning"]
+image: orb_graph_plsupdate.png
+format:
+  html:
+    df-print: paged
+    toc: true
+google-scholar: false
+
+---
+
+## Introduction
+
+This project simulates the Opening Range Breakout (ORB) day trading strategy on the TQQQ ETF, testing multiple interval sizes—including a no-trade scenario—to determine optimal profitability. By leveraging **XGBoost** to predict the best interval size under different market conditions, I aimed to maximize returns while managing risk. A robust data pipeline was built using SQL for feature engineering and preprocessing market data, resulting in a **19.1% annualized return improvement** through model-driven trade execution.
+
+## Output
+
+Here is a screenshot of the trading performance chart vs. if you had just bought and held TQQQ:
+
+![Sample ORB Trading Output](orb_graph_plsupdate.png)
+
+## Models Used
+
+- **XGBoost** for trade profitability classification  
+- **SQL-based Data Pipeline** for feature engineering and data preprocessing  
+- **ORB Simulation** on multiple interval sizes (including no-trade runs) to benchmark performance
+
+## Training
+
+- **XGBoost Model Training**  
+  - Includes hyperparameter tuning and cross-validation for the TQQQ dataset.
+
+- **SQL Data Pipeline**  
+  
+  - Processes raw market data into features for the XGBoost model.
+
+## Requirements
+
+- python 3.8+
+- financeDS (if applicable to your project)
+- xgboost
+- pandas
+- numpy
+- SQL engine/client (e.g., SQLite, PostgreSQL, or MySQL)
+- matplotlib / seaborn (if you’re plotting results)
+- jupyter / notebook (for running .ipynb files)

@@ -1,0 +1,43 @@
+---
+title: "Ethereum Smart Contract for NFT Generation & Minting"
+description: |
+    Designed and deployed an Ethereum smart contract for NFT generation and minting, supporting 10,000+ unique ERC-721 assets with an optimized Python image pipeline, reduced gas fees by 15%, and a user-friendly UI that facilitated over 1,000 transactions.
+date: 2023-12-15
+categories: ["Computer Vision"]
+image: pimpinpandasgif.gif
+format:
+  html:
+    df-print: paged
+    toc: true
+google-scholar: false
+---
+## Introduction
+
+This project involves designing and deploying an Ethereum smart contract to generate and mint NFTs, supporting over 10,000 unique ERC-721 compliant assets. It features an optimized Python-based image generation pipeline that ensures diverse traits and 99.9% metadata integrity. Additionally, a user-friendly UI streamlines the minting process, reducing gas fees by 15% and enabling more than 1,000 efficient transactions.
+
+## Output
+
+Here is a display of some of the NFT's minted:
+
+![NFT Minting UI Screenshot](pandas.png)
+
+
+## Technologies Used
+
+- **Ethereum Smart Contract** (Solidity) for NFT generation and minting  
+- **Python-based Image Generation Pipeline** for creating unique NFT assets  
+- **User Interface** for streamlined minting and transaction management
+
+## Deployment & Documentation
+
+- **Smart Contract Deployment**  
+
+- **Image Generation Pipeline Documentation**  
+
+## Requirements
+
+- Node.js and npm (for smart contract development)  
+- Solidity compiler (e.g., via Hardhat or Truffle)  
+- python 3.8+  
+- web3.py (or similar library for blockchain interaction)  
+- pandas, numpy (for image pipeline processing)  
