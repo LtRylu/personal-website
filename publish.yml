@@ -1,0 +1,4 @@
+source: project
+netlify:
+  - id:
+    url: 'ryantolone.netlify.app'
