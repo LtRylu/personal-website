@@ -6,10 +6,14 @@ wget https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSIO
 tar -xvzf quarto-${QUARTO_VERSION}-linux-amd64.tar.gz
 
 # Create directory and move only necessary files
-sudo mkdir -p /opt/quarto
-sudo mv quarto-${QUARTO_VERSION}/bin/quarto /opt/quarto/
-sudo mv quarto-${QUARTO_VERSION}/bin/tools /opt/quarto/
-sudo ln -s /opt/quarto/quarto /usr/local/bin/quarto
+mkdir -p $HOME/.local/bin
+mkdir -p $HOME/.local/opt/quarto
+mv quarto-${QUARTO_VERSION}/bin/quarto $HOME/.local/opt/quarto/
+mv quarto-${QUARTO_VERSION}/bin/tools $HOME/.local/opt/quarto/
+ln -s $HOME/.local/opt/quarto/quarto $HOME/.local/bin/quarto
+
+# Add to PATH
+export PATH="$HOME/.local/bin:$PATH"
 
 # Clean up
 rm -rf quarto-${QUARTO_VERSION}
