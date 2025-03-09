@@ -1,5 +1,5 @@
 [build]
-  command = "quarto render"
+  command = "chmod +x install-quarto.sh && ./install-quarto.sh && quarto render"
   publish = "_site"
 
 [build.environment]
