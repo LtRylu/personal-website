@@ -4,7 +4,7 @@ description: |
     A system that leverages YOLOv8 and a fine-tuned ResNet50 model to track players and ball in real time—automating shot speed, player positioning, and court analysis.
 date: 2025-02-07
 categories: ["Computer Vision"]
-image: pickleball_update_pls.png
+image: pickleball.png
 format:
   html:
     df-print: paged
@@ -20,7 +20,7 @@ This project analyzes pickleball players in video footage to measure shot speed,
 
 Here is a screenshot from one of the output videos:
 
-![pickleball computer vision screenshot](pickleball_update_pls.png)
+![pickleball computer vision screenshot](pickleball.png)
 
 ## Models Used
 
