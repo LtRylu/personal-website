@@ -3,7 +3,7 @@ title: "Ethereum Smart Contract for NFT Generation & Minting"
 description: |
     Designed and deployed an Ethereum smart contract for NFT generation and minting, supporting 10,000+ unique ERC-721 assets with an optimized Python image pipeline, reduced gas fees by 15%, and a user-friendly UI that facilitated over 1,000 transactions.
 date: 2023-12-15
-categories: ["Computer Vision"]
+categories: ["Crypto", "Algorithmic Art Generation"]
 image: pimpinpandasgif.gif
 format:
   html:

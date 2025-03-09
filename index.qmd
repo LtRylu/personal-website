@@ -13,7 +13,7 @@ about:
           url: mailto:iiryantoloneii@gmail.com
         - text: Resume
           url: "RyanToloneResume.pdf"
-image: img/blehh.jpg
+image: img/profile.jpg
 comments: false
 ---
 

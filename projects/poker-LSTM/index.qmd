@@ -1,0 +1,47 @@
+---
+title: "ML-Driven Poker Analytics & Bluff Prediction Platform"
+description: |
+    Developed an end-to-end machine learning pipeline that extracts, cleans, and feature-engineers over 5.7k real-money hand histories from PokerNow.club. Leveraging advanced feature engineering (bet ratios, decision times, board evaluations with Ace detection, and dynamic positional metrics) and a custom LSTM model with dynamic bucketing, the system predicts bluff versus value betting with a test AUC of 0.77. Hyperparameter tuning, cross-validation, and class balancing were key to optimizing performance.
+date: 2025-03-08
+categories: ["LSTM", "Deep Learning", "Time Series", "Poker"]
+image: pokerbluff.png
+format:
+  html:
+    df-print: paged
+    toc: true
+google-scholar: false
+---
+
+## Introduction
+
+This project leverages a deep learning approach to analyze real-money poker hand histories from PokerNow.club. By developing an end-to-end ML pipeline, the system processes over 5.7k hands (with blinds from \$0.25/\$0.50 up to \$2/\$5) to engineer advanced features—such as bet ratios, log-transformed decision times, comprehensive board evaluations with Ace detection, and dynamic positional metrics. A custom LSTM model, utilizing dynamic bucketing to manage variable-length sequences, was developed to predict whether the villain's betting action is a bluff or a value bet, achieving a test AUC of 0.77.
+
+## Output
+
+Below is a screenshot from the model evaluation dashboard displaying the confusion matrix, ROC curve, and feature importance chart:
+
+![confusion matrix](confusion_matrix.png)
+![feature importance chart](feature_importance.png)
+![roc curve](roc_curve.png)
+
+
+
+## Models & Techniques Used
+
+- **LSTM Network with Dynamic Bucketing**: Processes variable-length sequences of poker actions.
+- **Bidirectional LSTM Layers**: Capture context from both the past and future actions.
+- **Advanced Feature Engineering**: Incorporates bet ratios, decision times (log-transformed), board evaluations (with Ace detection), and positional metrics.
+- **Cross-Validation & Class Balancing**: Ensures robust model performance despite class imbalance (52% bluffs).
+
+## Training
+
+- **Data Preprocessing**: Raw hand histories are cleansed, features are engineered, and sequences are built per hand. Numerical features are standardized and categorical features are one-hot encoded.
+- **LSTM Model Training**: The model is trained using a combination of Bidirectional LSTMs, dropout, batch normalization, and L1/L2 regularization. Training is optimized via early stopping and learning rate reduction with cross-validation.
+- **Dynamic Bucketing**: Instead of padding all sequences to a global maximum, hands are bucketed by similar sequence lengths to reduce wasted computation and improve training efficiency.
+
+## Requirements
+
+- Python 3.8+
+- TensorFlow 2.x
+- Pandas, NumPy, Scikit-Learn
+- Matplotlib, Seaborn (for visualization)
