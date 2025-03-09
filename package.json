@@ -1,0 +1,7 @@
+{
+  "name": "ryan-tolone-website",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "bash install-quarto.sh && quarto render"
+  }
+}
