@@ -13,7 +13,7 @@ title: Beyond Specialists: Multi-Game Training as a Catalyst for AI Mastery in I
   
 It's not every day you stumble upon research that challenges the conventional wisdom of specialization. Traditionally, AI experts have designed bespoke systems fine-tuned for a single game. However, recent studies indicate that an AI exposed to a variety of similar games learns faster and performs better than its specialist counterpart. This meta-learning approach is now raising eyebrows across academia and industry alike.
 
-![](comparison.jpg)
+![AI Comparison](comparison.jpg)
 
 ## Why I Care
 
