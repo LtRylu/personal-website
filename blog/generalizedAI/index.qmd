@@ -9,6 +9,8 @@ description: New research suggests that training AI on a suite of similar games 
 google-scholar: true
 image: ai.jpg
 title: Beyond Specialists: Multi-Game Training as a Catalyst for AI Mastery in Incomplete Information Games
+
+citation:
 ---
   
 It's not every day you stumble upon research that challenges the conventional wisdom of specialization. Traditionally, AI experts have designed bespoke systems fine-tuned for a single game. However, recent studies indicate that an AI exposed to a variety of similar games learns faster and performs better than its specialist counterpart. This meta-learning approach is now raising eyebrows across academia and industry alike.
