@@ -1,7 +1,11 @@
 [build]
-  command = "quarto render"
+  # No build command here
   publish = "_site"
 
 [[plugins]]
   package = "netlify-plugin-quarto"
 
+  # (Optional) You can specify plugin inputs like Quarto version or command
+  # [plugins.inputs]
+  #   version = "latest"
+  #   cmd = "render"
