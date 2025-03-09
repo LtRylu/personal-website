@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "bash install-quarto.sh && quarto render"
+  },
+  "devDependencies": {
+    "netlify-plugin-quarto": "^0.0.4"
   }
 }
