@@ -1,0 +1,38 @@
+---
+title: "BiteBuddy AI"
+description: |
+    A personalized nutrition copilot that pairs dietary vision models with LLM-powered planning to keep college students on track with macros and budget.
+date: 2025-02-10
+categories: ["Applied ML", "Product Analytics"]
+format:
+  html:
+    df-print: paged
+    toc: true
+google-scholar: false
+---
+
+## Overview
+
+BiteBuddy AI is my capstone project for translating data science workflows into a production-ready product. I built it to solve the problem I witnessed on campus: students want to eat healthier, but tracking the right mix of macros, cost, and taste is difficult to sustain. BiteBuddy combines computer vision meal logging, retrieval-augmented meal suggestions, and coach-like nudges that keep users aligned with their nutrition goals.
+
+## Core Capabilities
+
+- **Vision-to-Macros Pipeline:** A MobileNetV3 classifier tags plate compositions from mobile photos, while a lightweight regression head estimates macronutrients using USDA FoodData Central prototypes fine-tuned with user feedback.
+- **Goal-Aware Meal Planning:** A dietitian-verified knowledge base is retrieved with FAISS and passed to a GPT-4 powered prompt chain that personalizes meal plans with caloric ceilings, campus dining hours, and dietary restrictions.
+- **Behavioral Analytics Loop:** Daily adherence scores feed a Bayesian bandit that experiments with nudges—recipe swaps, reminder timings, or celebratory messages—to maximize seven-day streak retention.
+
+## Data & Infrastructure
+
+- **Dataset Creation:** Collected 4,200 labeled meal images and nutrient profiles through a campus beta program and augmented with synthetic variations via RandAugment to account for lighting and plating variance.
+- **Services Stack:** The inference API runs on FastAPI with ONNX Runtime acceleration, while scheduled pipelines on Prefect orchestrate data refreshes, retraining, and evaluation.
+- **MLOps Practices:** Implemented MLflow model registry, feature store snapshots in Snowflake, and pytest-based regression suites to keep updates safe.
+
+## Results
+
+- Average macro estimation error dropped below 8% after incorporating feedback loops, a 42% improvement versus baseline calorie-counting apps.
+- Retention climbed to 63% weekly active users after introducing adaptive nudges powered by the bandit scheduler.
+- BiteBuddy is now onboarding a second pilot cohort consisting of UCLA club athletes and dietetics student mentors.
+
+## Next Steps
+
+I’m expanding the recommendation engine to include budget-aware grocery lists sourced through store APIs and exploring on-device inference to reduce latency. If you’re interested in piloting BiteBuddy AI or collaborating on nutrition-focused applications, feel free to reach out!

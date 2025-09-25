@@ -1,0 +1,44 @@
+---
+title: Graph Neural Forecasting Is Finally Beating Classical Supply Chain Baselines
+subtitle: How temporal graph transformers cut backorders for omnichannel retailers
+categories:
+  - Forecasting
+  - Retail
+  - Graph Learning
+date: 2025-02-05
+description: A deep dive into using temporal graph transformers to capture store-to-store demand contagion for big-box retailers.
+google-scholar: false
+---
+
+Supply chain teams have been chasing a holy grail for years: forecasts that react quickly to regional demand shocks without overfitting noise. This winter I joined a pilot with a national retailer exploring temporal graph transformers (TGTs), and we finally saw meaningful lift over ARIMA, Prophet, and even DeepAR baselines. The key insight is to treat stores as nodes in a dynamic graph connected by transferability signals—web traffic correlation, regional promos, and even weather systems—then let attention uncover the diffusion structure.
+
+## Building the Graph
+
+- **Nodes:** Each store SKU combination. We embedded static factors such as footprint size, demographics, and omnichannel maturity.
+- **Edges:** Learned similarities from rolling-window Granger causality tests, plus engineered edges for logistics lanes and shared promo calendars. Edge weights are updated weekly.
+- **Temporal Signals:** 730 days of unit sales, web visits, and competitor price indices, aligned into 15-minute buckets for fast-moving categories.
+
+## Model Architecture
+
+The winning setup combined a TGT encoder (think Graph Attention Networks meets TimeSeries Transformer) with two heads:
+
+1. **Demand Head:** Predicts 1-, 3-, and 7-day horizons simultaneously.
+2. **Inventory Head:** Suggests safety stock adjustments conditioned on predicted lead times.
+
+We trained with a quantile loss to optimize service level targets and used hierarchical reconciliation to ensure the sums matched regional planning totals.
+
+## What Changed in Operations
+
+- **Promo Shock Responsiveness:** When a flash promotion hit the Southeast, edge attention weights spiked around Atlanta and propagated to adjacent states within hours, giving planners early warning to re-route inventory.
+- **Cold Snap Resilience:** Weather-driven edges lit up before sales surged, enabling proactive redistribution of heaters and winter apparel.
+- **Explainability Wins:** Integrated gradients on the attention scores gave planners tangible narratives (“Memphis web traffic drove Nashville demand two days later”).
+
+## Tooling Stack
+
+We orchestrated the pipeline in Databricks with Delta Live Tables, trained models on NVIDIA L40 GPUs, and deployed them through Ray Serve for low-latency scoring. A Feast-backed feature store kept transformations consistent across training and inference.
+
+## Why This Is a Trend to Watch
+
+GNN-based forecasting is crossing the chasm because retailers now have the data granularity, GPU budgets, and MLOps maturity to support it. Expect to see more hybrid graph/time-series models powering replenishment and dynamic pricing before year-end.
+
+For practitioners: start by mapping your signal graph and benchmarking a lightweight GCRN. The interpretability you gain from attention scores will make stakeholder buy-in far easier than a black-box sequence model ever could.
