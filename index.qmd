@@ -5,6 +5,7 @@ comments: false
 format:
   html:
     allow-html: true
+    toc: false
 ---
 
 ::: {=html}
@@ -42,11 +43,8 @@ format:
 :::
 
 ::: {.surface-panel #focus}
-## {.section-title .gradient-text} What I'm optimising right now
-
-::: {.section-subtitle}
-I’m happiest when I can combine rapid experimentation with production discipline—owning the data plumbing, models, evaluation, and product polish in one loop.
-:::
+<h2 class="section-title gradient-text">What I'm optimising right now</h2>
+<p class="section-subtitle">I’m happiest when I can combine rapid experimentation with production discipline—owning the data plumbing, models, evaluation, and product polish in one loop.</p>
 
 ::: {.feature-grid}
 ::: {.feature-card}
@@ -68,8 +66,7 @@ Wireframing UX, building ETL in the cloud, shipping inference APIs, and closing 
 :::
 
 ::: {.surface-panel #work}
-## {.section-title .gradient-text} Highlighted builds
-
+<h2 class="section-title gradient-text">Highlighted builds</h2>
 ::: {.feature-grid}
 ::: {.feature-card}
 <div class="feature-icon">🍽️</div>
@@ -90,8 +87,7 @@ Deployed an ORB-inspired equities strategy with live risk guardrails, Azure Func
 :::
 
 ::: {.surface-panel #timeline}
-## {.section-title .gradient-text} Recent trajectory
-
+<h2 class="section-title gradient-text">Recent trajectory</h2>
 ::: {.timeline}
 ::: {.timeline-item}
 <span>2025 • BiteBuddy AI</span>
@@ -109,11 +105,8 @@ Architected data ingestion, feature engineering, and execution for a community-d
 :::
 
 ::: {.surface-panel #writing}
-## {.section-title .gradient-text} Latest writing
-
-::: {.section-subtitle}
-I publish deep dives on infrastructure that keeps AI honest—from LLM drift guardrails to federated feature stores.
-:::
+<h2 class="section-title gradient-text">Latest writing</h2>
+<p class="section-subtitle">I publish deep dives on infrastructure that keeps AI honest—from LLM drift guardrails to federated feature stores.</p>
 
 ::: {.feature-grid}
 ::: {.feature-card}
@@ -135,11 +128,8 @@ How edge-personalized models can deliver cardiology insights in real time withou
 :::
 
 ::: {.surface-panel #connect}
-## {.section-title .gradient-text} Let’s collaborate
-
-::: {.section-subtitle}
-I’m open to internships, research collaborations, and product experiments in responsible AI, data infra, or sports analytics. Reach out and let’s build something measurable.
-:::
+<h2 class="section-title gradient-text">Let’s collaborate</h2>
+<p class="section-subtitle">I’m open to internships, research collaborations, and product experiments in responsible AI, data infra, or sports analytics. Reach out and let’s build something measurable.</p>
 
 ::: {.cta-row}
 <a class="btn-solid" href="mailto:iiryantoloneii@gmail.com">Drop me a note</a>
