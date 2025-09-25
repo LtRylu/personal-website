@@ -2,122 +2,147 @@
 title: "Ryan Tolone"
 image: img/profile.jpg
 comments: false
+format:
+  html:
+    allow-html: true
 ---
 
-<div class="hero-panel">
-  <div class="row align-items-center g-4">
-    <div class="col-md-7">
-      <h1 class="hero-heading">Hi, I’m Ryan — I build <span class="gradient-text">deployable intelligence</span> that ships.</h1>
-      <p class="hero-subtitle">UCLA statistics & data science senior obsessed with translating research-grade AI into reliable, product-ready systems for sports vision, nutrition coaching, and algorithmic trading.</p>
-      <div class="hero-badges">
-        <span class="hero-badge">applied ml engineering</span>
-        <span class="hero-badge">full-stack data products</span>
-        <span class="hero-badge">responsible ai</span>
-      </div>
-      <div class="cta-row">
-        <a class="btn-solid" href="RyanToloneResume.pdf" target="_blank" rel="noopener">Download Resume</a>
-        <a class="btn-ghost" href="#focus">See what I’m building</a>
-      </div>
-      <div class="social-links">
-        <a class="social-link" href="https://www.linkedin.com/in/ryan-tolone-a5038a331/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="social-link" href="https://github.com/LtRylu" target="_blank" rel="noopener">GitHub</a>
-        <a class="social-link" href="mailto:iiryantoloneii@gmail.com">Email</a>
-      </div>
-    </div>
-    <div class="col-md-5 text-md-end text-center">
-      <img src="img/profile.jpg" alt="Ryan Tolone" class="img-fluid hero-headshot" />
-    </div>
-  </div>
+::: {=html}
+<div class="background-orbs" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
 </div>
+:::
 
-<div class="surface-panel" id="focus">
-  <h2 class="section-title gradient-text">What I'm optimising right now</h2>
-  <p class="section-subtitle">I’m happiest when I can combine rapid experimentation with production discipline—owning the data plumbing, models, evaluation, and product polish in one loop.</p>
-  <div class="feature-grid">
-    <div class="feature-card">
-      <div class="feature-icon">📊</div>
-      <h3>Data Systems that stay trustworthy</h3>
-      <p>Designing drift-aware monitoring for RAG stacks, instrumenting feature stores, and keeping evals tightly coupled to user intent.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🎯</div>
-      <h3>Products with measurable lift</h3>
-      <p>Translating ML into growth metrics—think CV pipelines for sports analytics, nutrition adherence scores, and trading P&amp;L guardrails.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">⚙️</div>
-      <h3>Full-stack execution</h3>
-      <p>Wireframing UX, building ETL in the cloud, shipping inference APIs, and closing the loop with storytelling dashboards.</p>
-    </div>
-  </div>
+::: {.hero-panel}
+::: {.row .align-items-center .g-4}
+::: {.col-md-7}
+<h1 class="hero-heading">Hi, I’m Ryan — I build <span class="gradient-text">deployable intelligence</span> that ships.</h1>
+<p class="hero-subtitle">UCLA statistics &amp; data science senior obsessed with translating research-grade AI into reliable, product-ready systems for sports vision, nutrition coaching, and algorithmic trading.</p>
+<div class="hero-badges">
+  <span class="hero-badge">applied ml engineering</span>
+  <span class="hero-badge">full-stack data products</span>
+  <span class="hero-badge">responsible ai</span>
 </div>
+<div class="cta-row">
+  <a class="btn-solid" href="RyanToloneResume.pdf" target="_blank" rel="noopener">Download Resume</a>
+  <a class="btn-ghost" href="#focus">See what I’m building</a>
+</div>
+<div class="social-links">
+  <a class="social-link" href="https://www.linkedin.com/in/ryan-tolone-a5038a331/" target="_blank" rel="noopener">LinkedIn</a>
+  <a class="social-link" href="https://github.com/LtRylu" target="_blank" rel="noopener">GitHub</a>
+  <a class="social-link" href="mailto:iiryantoloneii@gmail.com">Email</a>
+</div>
+:::
+::: {.col-md-5 .text-md-end .text-center}
+<img src="img/profile.jpg" alt="Ryan Tolone" class="img-fluid hero-headshot" />
+:::
+:::
+:::
 
-<div class="surface-panel" id="work">
-  <h2 class="section-title gradient-text">Highlighted builds</h2>
-  <div class="feature-grid">
-    <div class="feature-card">
-      <div class="feature-icon">🍽️</div>
-      <h3><a href="projects/bitebuddy/">BiteBuddy AI</a></h3>
-      <p>Vision-powered meal logging plus retrieval-augmented nutrition coaching. Led everything from on-device inference to pilot cohort activation.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🥎</div>
-      <h3>Pickleball vision stack</h3>
-      <p>Automated rally segmentation, spin tracking, and win probability overlays for competitive pickleball using multi-view pose estimation.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">📈</div>
-      <h3>Algorithmic trading engine</h3>
-      <p>Deployed an ORB-inspired equities strategy with live risk guardrails, Azure Functions scheduling, and discord-based anomaly surfacing.</p>
-    </div>
-  </div>
-</div>
+::: {.surface-panel #focus}
+## {.section-title .gradient-text} What I'm optimising right now
 
-<div class="surface-panel" id="timeline">
-  <h2 class="section-title gradient-text">Recent trajectory</h2>
-  <div class="timeline">
-    <div class="timeline-item">
-      <span>2025 • BiteBuddy AI</span>
-      <p>Leading a second pilot with UCLA club athletes, expanding the recommendation engine with retrieval-augmented meal plans.</p>
-    </div>
-    <div class="timeline-item">
-      <span>2024 • APE Picks Vision Lab</span>
-      <p>Built the computer vision analysis pipeline powering collegiate pickleball scouting reports and live broadcast overlays.</p>
-    </div>
-    <div class="timeline-item">
-      <span>2024 • Algorithmic Trading Collective</span>
-      <p>Architected data ingestion, feature engineering, and execution for a community-driven intraday trading strategy.</p>
-    </div>
-  </div>
-</div>
+::: {.section-subtitle}
+I’m happiest when I can combine rapid experimentation with production discipline—owning the data plumbing, models, evaluation, and product polish in one loop.
+:::
 
-<div class="surface-panel" id="writing">
-  <h2 class="section-title gradient-text">Latest writing</h2>
-  <p class="section-subtitle">I publish deep dives on infrastructure that keeps AI honest—from LLM drift guardrails to federated feature stores.</p>
-  <div class="feature-grid">
-    <div class="feature-card">
-      <div class="feature-icon">🛰️</div>
-      <h3><a href="blog/llm-drift-guardrails/">Monitoring LLM Drift with Synthetic Control Charts</a></h3>
-      <p>Why retrieval-augmented apps need streaming semantic telemetry and how to wire probe cohorts that actually detect drift.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🧠</div>
-      <h3><a href="blog/generalizedAI/">Beyond Specialists — Multi-Game Training</a></h3>
-      <p>Exploring generalized policies for incomplete information games and the implications for competitive poker AI.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🏥</div>
-      <h3><a href="blog/federated-health-feature-stores/">Federated Feature Stores in Digital Health</a></h3>
-      <p>How edge-personalized models can deliver cardiology insights in real time without compromising HIPAA compliance.</p>
-    </div>
-  </div>
-</div>
+::: {.feature-grid}
+::: {.feature-card}
+<div class="feature-icon">📊</div>
+### Data Systems that stay trustworthy
+Designing drift-aware monitoring for RAG stacks, instrumenting feature stores, and keeping evals tightly coupled to user intent.
+:::
+::: {.feature-card}
+<div class="feature-icon">🎯</div>
+### Products with measurable lift
+Translating ML into growth metrics—think CV pipelines for sports analytics, nutrition adherence scores, and trading P&amp;L guardrails.
+:::
+::: {.feature-card}
+<div class="feature-icon">⚙️</div>
+### Full-stack execution
+Wireframing UX, building ETL in the cloud, shipping inference APIs, and closing the loop with storytelling dashboards.
+:::
+:::
+:::
 
-<div class="surface-panel" id="connect">
-  <h2 class="section-title gradient-text">Let’s collaborate</h2>
-  <p class="section-subtitle">I’m open to internships, research collaborations, and product experiments in responsible AI, data infra, or sports analytics. Reach out and let’s build something measurable.</p>
-  <div class="cta-row">
-    <a class="btn-solid" href="mailto:iiryantoloneii@gmail.com">Drop me a note</a>
-    <a class="btn-ghost" href="https://www.linkedin.com/in/ryan-tolone-a5038a331/" target="_blank" rel="noopener">Connect on LinkedIn</a>
-  </div>
-</div>
+::: {.surface-panel #work}
+## {.section-title .gradient-text} Highlighted builds
+
+::: {.feature-grid}
+::: {.feature-card}
+<div class="feature-icon">🍽️</div>
+### [BiteBuddy AI](projects/bitebuddy/)
+Vision-powered meal logging plus retrieval-augmented nutrition coaching. Led everything from on-device inference to pilot cohort activation.
+:::
+::: {.feature-card}
+<div class="feature-icon">🥎</div>
+### Pickleball vision stack
+Automated rally segmentation, spin tracking, and win probability overlays for competitive pickleball using multi-view pose estimation.
+:::
+::: {.feature-card}
+<div class="feature-icon">📈</div>
+### Algorithmic trading engine
+Deployed an ORB-inspired equities strategy with live risk guardrails, Azure Functions scheduling, and discord-based anomaly surfacing.
+:::
+:::
+:::
+
+::: {.surface-panel #timeline}
+## {.section-title .gradient-text} Recent trajectory
+
+::: {.timeline}
+::: {.timeline-item}
+<span>2025 • BiteBuddy AI</span>
+Leading a second pilot with UCLA club athletes, expanding the recommendation engine with retrieval-augmented meal plans.
+:::
+::: {.timeline-item}
+<span>2024 • APE Picks Vision Lab</span>
+Built the computer vision analysis pipeline powering collegiate pickleball scouting reports and live broadcast overlays.
+:::
+::: {.timeline-item}
+<span>2024 • Algorithmic Trading Collective</span>
+Architected data ingestion, feature engineering, and execution for a community-driven intraday trading strategy.
+:::
+:::
+:::
+
+::: {.surface-panel #writing}
+## {.section-title .gradient-text} Latest writing
+
+::: {.section-subtitle}
+I publish deep dives on infrastructure that keeps AI honest—from LLM drift guardrails to federated feature stores.
+:::
+
+::: {.feature-grid}
+::: {.feature-card}
+<div class="feature-icon">🛰️</div>
+### [Monitoring LLM Drift with Synthetic Control Charts](blog/llm-drift-guardrails/)
+Why retrieval-augmented apps need streaming semantic telemetry and how to wire probe cohorts that actually detect drift.
+:::
+::: {.feature-card}
+<div class="feature-icon">🧠</div>
+### [Beyond Specialists — Multi-Game Training](blog/generalizedAI/)
+Exploring generalized policies for incomplete information games and the implications for competitive poker AI.
+:::
+::: {.feature-card}
+<div class="feature-icon">🏥</div>
+### [Federated Feature Stores in Digital Health](blog/federated-health-feature-stores/)
+How edge-personalized models can deliver cardiology insights in real time without compromising HIPAA compliance.
+:::
+:::
+:::
+
+::: {.surface-panel #connect}
+## {.section-title .gradient-text} Let’s collaborate
+
+::: {.section-subtitle}
+I’m open to internships, research collaborations, and product experiments in responsible AI, data infra, or sports analytics. Reach out and let’s build something measurable.
+:::
+
+::: {.cta-row}
+<a class="btn-solid" href="mailto:iiryantoloneii@gmail.com">Drop me a note</a>
+<a class="btn-ghost" href="https://www.linkedin.com/in/ryan-tolone-a5038a331/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+:::
+:::
