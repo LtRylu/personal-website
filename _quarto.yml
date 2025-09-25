@@ -14,6 +14,9 @@ website:
         text: Projects
       - href: blog
         text: Blog
+    right:
+      - text: Resume
+        href: RyanToloneResume.pdf
 
   page-footer:
     left: "(c) Ryan Tolone, 2025–. [Disclaimer](disclaimer)"
@@ -30,7 +33,6 @@ format:
     toc_smooth_scroll: true
     toc_highlight: true
     fig-align: center
-
 
 
 

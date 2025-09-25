@@ -8,7 +8,10 @@ categories:
 date: 2025-02-08
 description: Instrumenting RAG systems with synthetic query control charts to surface semantic drift before it breaks user trust.
 google-scholar: false
+image: https://images.unsplash.com/photo-1555949963-aa79dcee981e?auto=format&fit=crop&w=1600&q=80
 ---
+
+![Telemetry screens glowing blue and orange in a control room](https://images.unsplash.com/photo-1555949963-aa79dcee981e?auto=format&fit=crop&w=1600&q=80){fig-alt="Control room monitors visualising streaming telemetry."}
 
 Large language models embedded in retrieval-augmented generation (RAG) stacks are notoriously slippery: the model weights are fixed, yet context shifts as the underlying knowledge base evolves. Over the past six months I’ve watched enterprise teams embrace “continuous grounding” pipelines, only to be blindsided by relevance drift that silently erodes answer quality. The emerging best practice is to monitor semantic drift the same way industrial engineers watch sensor drift—through synthetic control charts.
 

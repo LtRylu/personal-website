@@ -8,7 +8,10 @@ categories:
 date: 2025-02-02
 description: Architecting a federated feature store to stream wearable-derived signals into cardiology risk models while staying compliant.
 google-scholar: false
+image: https://images.unsplash.com/photo-1580281657521-67d37b177e31?auto=format&fit=crop&w=1600&q=80
 ---
+
+![Clinician reviewing a connected health dashboard on a tablet](https://images.unsplash.com/photo-1580281657521-67d37b177e31?auto=format&fit=crop&w=1600&q=80){fig-alt="Medical professional analysing a digital health dashboard."}
 
 Digital therapeutics companies are racing to personalize interventions using biometric data, but HIPAA and hospital firewalls limit how much raw data can leave the edge. Over the past quarter I’ve been collaborating with a cardiology startup that adopted a federated feature store—a trend I expect to spread quickly across digital health stacks.
 

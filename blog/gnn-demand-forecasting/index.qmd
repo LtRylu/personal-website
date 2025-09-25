@@ -8,7 +8,10 @@ categories:
 date: 2025-02-05
 description: A deep dive into using temporal graph transformers to capture store-to-store demand contagion for big-box retailers.
 google-scholar: false
+image: https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1600&q=80
 ---
+
+![Abstract visualization of graph nodes connected by glowing edges](https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1600&q=80){fig-alt="Graph nodes highlighted by neon lines representing dynamic relationships."}
 
 Supply chain teams have been chasing a holy grail for years: forecasts that react quickly to regional demand shocks without overfitting noise. This winter I joined a pilot with a national retailer exploring temporal graph transformers (TGTs), and we finally saw meaningful lift over ARIMA, Prophet, and even DeepAR baselines. The key insight is to treat stores as nodes in a dynamic graph connected by transferability signals—web traffic correlation, regional promos, and even weather systems—then let attention uncover the diffusion structure.
 

@@ -4,6 +4,7 @@ description: |
     A personalized nutrition copilot that pairs dietary vision models with LLM-powered planning to keep college students on track with macros and budget.
 date: 2025-02-10
 categories: ["Applied ML", "Product Analytics"]
+image: https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80
 format:
   html:
     df-print: paged
@@ -12,6 +13,10 @@ google-scholar: false
 ---
 
 ## Overview
+
+BiteBuddy pairs a high-comfort UX with systems design tuned for compliance and retention.
+
+![Overhead view of a colorful, balanced meal prep spread](https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80){fig-alt="Assorted healthy meals prepped on a table."}
 
 BiteBuddy AI is my capstone project for translating data science workflows into a production-ready product. I built it to solve the problem I witnessed on campus: students want to eat healthier, but tracking the right mix of macros, cost, and taste is difficult to sustain. BiteBuddy combines computer vision meal logging, retrieval-augmented meal suggestions, and coach-like nudges that keep users aligned with their nutrition goals.
 
